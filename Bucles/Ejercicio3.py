@@ -5,9 +5,12 @@
 numero = input("Escribe un numero positivo: ")
 numero = int(numero)
 
+
+primero = True
+
 for i in range (1, numero+1):
     if i % 2 != 0:
-    
+        if 
 #        print (i, end=", ")
 
 
