@@ -11,7 +11,7 @@ cd C:\Users\kokia\OneDrive\ドキュメント\GitHub\practicas_python\Bucles
 
 ---
 
-## `GitHub`
+## Actualizar el repositorio local en `GitHub` 
 
 cd C:\Users\kokia\OneDrive\ドキュメント\GitHub\practicas_python
 
@@ -25,6 +25,8 @@ git push
 
 ---
 
+Arquitectura 
+
 ```
 practicas_python  ← abrir aquí en VS Code
 │
@@ -37,4 +39,26 @@ practicas_python  ← abrir aquí en VS Code
 │   └── Ejercicio1.py
 │
 └── Funciones
+```
+
+--- 
+
+Desde el repositorio local para que refleje lo que esta en `GitHub`
+
+- `git pull`
+
+Arquitectura de Windows y Mac
+
+```
+Mac (casa)
+ └── repositorio local
+        |
+        | git push
+        ↓
+GitHub (nube)
+        ↑
+        | git pull
+        |
+Windows (trabajo)
+ └── repositorio local
 ```
