@@ -6,7 +6,12 @@
 #El usuario puede introducir su nombre combinando mayúsculas y minúsculas como quiera.
 
 nombre_completo = input ("Ingresa tu nombre completo: ")
+    
+minusculas = nombre_completo.lower()
+print(f"{minusculas}")
 
-for i in range(3):
-    print(f"{i+1}. {nombre_completo}")
+mayusculas = nombre_completo.upper()
+print(mayusculas)
 
+titulo = nombre_completo.title()
+print(f"{titulo}")
