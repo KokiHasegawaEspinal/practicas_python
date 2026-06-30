@@ -3,10 +3,10 @@
 #una frase en la consola y una vocal, y después muestre por
 #pantalla la misma frase pero con la vocal introducida en mayúscula.
 
-palabra = input("Introduce una frase y una vocal: ")
+frase = input("Introduce una frase: ")
+vocal = input("Introduce una vocal: ")
 
-vocal_mayuscula = palabra[-2:]
-palabra_sin_vocal = palabra[0:len]
+vocal_mayuscula = vocal.upper()
 
-print(vocal_mayuscula)
-print(palabra_sin_vocal)
+frase_vocal_mayuscula  = frase.replace(vocal,vocal_mayuscula)
+print(frase_vocal_mayuscula)
