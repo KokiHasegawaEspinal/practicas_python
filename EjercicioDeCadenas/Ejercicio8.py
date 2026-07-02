@@ -5,15 +5,11 @@
 
 precio_producto = input("Introduce el precio del producto en euros con dos decimales: ")
 
-precio_producto = round((precio_producto),2)
-
 buscar_punto = precio_producto.find(".")
 print(buscar_punto)
 
 precio_entero = precio_producto[:buscar_punto]
-print(precio_entero)
+print(f"Euros: {precio_entero}")
 
-
-
-
-print(precio_producto)
+precio_decimal = precio_producto[buscar_punto+1:]
+print(f"Centimos: {precio_decimal}")
