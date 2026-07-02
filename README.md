@@ -19,7 +19,7 @@ git status
 
 git add .
 
-git commit -m "Add Ejercicio2 Python loop exercise"
+git commit -m "Add Ejercicio 7,8 de Python chain exercise"
 
 git push
 
