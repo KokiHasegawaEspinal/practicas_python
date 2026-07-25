@@ -14,22 +14,16 @@ grupo = {
 nombre = input("Ingresa tu nombre: ").upper()
 sexo = input("Ingresa tu genero (M/F):").upper()
 
-#print(nombre)
-#print(sexo)
-#print (nombre.title())
-
-if sexo == "F" and nombre[0] < "M":
-    grupo_print=grupo['A']
-#    print(f"{nombre.title()} pertenece al {grupo['A']}")
-elif sexo == "F" and nombre[0] >= "M":
-    grupo_print=grupo['B']
-#    print(f"{nombre.title()} pertenece al {grupo ['B']}")
-elif sexo == "M" and nombre[0] >"N":
-    grupo_print=grupo['A']
-#    print(f"{nombre.title()} pertenece al {grupo ['A']}")
+if sexo == "F":
+    if nombre[0] < "M":
+        grupo_print=grupo['A']
+    elif nombre[0] >= "M":
+        grupo_print=grupo['B']        
 else:
-    grupo_print=grupo['B']
-#    print(f"{nombre.title()} pertenece al {grupo ['B']}")
+    if nombre[0] > "N":
+        grupo_print=grupo['A']
+    elif nombre[0] <= "N":
+        grupo_print=grupo['B']
 
 print(f"{nombre.title()} pertenece al {grupo_print}")
 
