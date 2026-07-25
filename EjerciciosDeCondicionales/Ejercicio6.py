@@ -17,12 +17,12 @@ sexo = input("Ingresa tu genero (M/F):").upper()
 if sexo == "F":
     if nombre[0] < "M":
         grupo_print=grupo['A']
-    elif nombre[0] >= "M":
+    else:
         grupo_print=grupo['B']        
 else:
     if nombre[0] > "N":
         grupo_print=grupo['A']
-    elif nombre[0] <= "N":
+    else:
         grupo_print=grupo['B']
 
 print(f"{nombre.title()} pertenece al {grupo_print}")
