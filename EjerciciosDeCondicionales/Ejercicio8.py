@@ -22,16 +22,18 @@ puntuacion_usuario = float(input("Ingresa tu puntuacion: "))
 
 if puntuacion_usuario == 0.0:
     rendimiento = "Inaceptable"
-    puntuacion = 0.0
+    valido = True
 elif puntuacion_usuario == 0.4:
     rendimiento = "Aceptable"
-    puntuacion = 0.4
+    valido = True
 elif puntuacion_usuario >= 0.6:
     rendimiento = "Meritorio"
-    puntuacion = puntuacion_usuario
+    valido = True
 else:
-    print ("Valor ingresado no correcto, vuelva a intentar")
-    
-dinero_conseguido = dinero_multiplicador * puntuacion
+    valido = False
 
-print (f"Tu rendimiento es {rendimiento} y la cantidad de dinero a recibir por dicho rendimiento es de {dinero_conseguido}€")
+if valido:
+    dinero_conseguido = dinero_multiplicador * puntuacion_usuario
+    print (f"Tu rendimiento es {rendimiento} y la cantidad de dinero a recibir por dicho rendimiento es de {dinero_conseguido}€")
+else:
+    print("Ingresa un monto válido")
