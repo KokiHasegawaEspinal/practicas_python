@@ -12,7 +12,7 @@
 #| Entre 4 y 18 años |    5€    |
 #| Mayor de 18 años  |   10€    |
 
-precio_entrada= {
+precio_entrada = {
     "A":0,
     "B":5,
     "C":10
