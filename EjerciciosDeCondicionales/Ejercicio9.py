@@ -15,7 +15,7 @@
 precio_entrada = {
     "A":0,
     "B":5,
-    "C":10
+    "C":1
 }
 
 edad_cliente = int(input("Que edad tienes? "))

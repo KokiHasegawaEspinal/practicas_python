@@ -13,7 +13,7 @@
 
 print(" Bienvenido a La pizzería Bella Napoli")
 
-pizza_usuario = input("Desea una pizza vegetariana? ").upper()
+pizza_usuario = input("Desea una pizza vegetariana? (Ingrese si o no)").upper()
 
 ingredientes_comunes = {
     "MOZZARELLA":"mozarella",
@@ -39,7 +39,7 @@ if pizza_usuario == "SI":
 else:
     pizza_tipo = "Pizza no vegetariana"
     ingredientes_usuario = input(f"Escoja un topping ({ingredientes_no_vegetarinos['PEPERONI']} o {ingredientes_no_vegetarinos['JAMON']} o {ingredientes_no_vegetarinos['SALMON']}): ").upper()
-    
+
 print (f"La pizza que ordenó es {pizza_tipo}")
 print (f"Los ingredientes que contiene la {pizza_tipo} son: ")
 print (f"Ingredientes comunes: {ingredientes_comunes['MOZZARELLA']} y {ingredientes_comunes['TOMATE']}")
