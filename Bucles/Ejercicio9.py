@@ -3,12 +3,14 @@
 ##contraseña en una variable, pregunte al usuario por la
 #contraseña hasta que introduzca la contraseña correcta.
 
-contrasena = "jaskj!kd12"
+contrasena = "jasKLj!kd12"
 
 
 while True:
-    usuario_contrasena = input("Ingresa tu contraseña: ").upper()
-    if usuario_contrasena == contrasena.upper():
+#    usuario_contrasena = input("Ingresa tu contraseña: ").upper()
+#    if usuario_contrasena == contrasena.upper():
+    usuario_contrasena = input("Ingresa tu contraseña: ")
+    if usuario_contrasena == contrasena:
         print ("Contraseña correcta")
         break
     else:
