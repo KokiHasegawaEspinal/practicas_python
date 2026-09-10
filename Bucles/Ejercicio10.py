@@ -4,9 +4,16 @@
 
 numero_usuario = int(input("Ingresa un número: "))
 
-numero_primo = 
+numero_primo = True
 
-if numero_usuario % 0:
-    print("Es un número primo")
+if numero_usuario <= 1:
+    numero_primo = False
+
+for i in range (2, numero_usuario):
+    if numero_usuario % i == 0:
+        numero_primo = False
+        break
+if numero_primo:
+    print(f" {numero_usuario} es un número primo!")
 else:
-    print("No es un número primo")
+    print(f"{numero_usuario} no es número primo!")
